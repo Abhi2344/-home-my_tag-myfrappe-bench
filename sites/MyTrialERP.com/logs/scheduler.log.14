@@ -1,0 +1,1680 @@
+2023-05-19 16:06:57,242 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:07:57,634 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:08:57,996 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:09:58,355 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:10:58,706 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:11:59,064 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:12:59,465 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:13:59,922 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:15:00,320 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:16:00,678 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:17:01,010 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:25:53,332 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:26:53,908 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:27:54,150 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:28:54,388 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:29:54,683 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:30:54,954 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:31:55,189 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:32:55,439 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:33:55,716 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:34:55,972 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:35:56,199 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:36:56,431 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:37:56,781 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:38:57,077 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:39:57,334 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:40:57,618 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:41:57,905 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:42:58,145 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:43:58,412 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:44:58,674 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:45:58,945 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:46:59,218 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:47:59,504 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:48:59,775 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:50:00,073 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:51:00,325 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:52:00,558 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:53:00,827 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:54:01,080 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:55:01,506 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 16:56:01,799 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:02:58,879 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:03:59,298 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:04:59,617 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:06:00,047 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:07:00,291 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:08:00,555 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:09:00,830 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:10:01,075 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:11:01,320 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:12:01,559 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:13:01,822 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:14:02,059 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:15:02,297 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:16:02,538 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:17:02,813 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:18:03,042 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 17:19:03,314 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-19 19:27:08,188 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+

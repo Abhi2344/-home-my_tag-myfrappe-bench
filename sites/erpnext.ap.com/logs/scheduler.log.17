@@ -1,0 +1,2 @@
+2023-05-20 10:01:21,075 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.collect_project_status for erpnext.ap.com
+2023-05-20 10:01:21,356 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.collect_project_status for erpnext.ap.com

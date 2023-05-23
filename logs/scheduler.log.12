@@ -1,0 +1,7 @@
+2023-05-22 10:28:24,722 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-22 10:28:24,772 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-22 10:28:24,945 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-22 10:28:24,996 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-22 10:28:25,183 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-22 10:28:25,240 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-22 10:28:25,379 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com

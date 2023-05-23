@@ -1,0 +1,304 @@
+2023-05-16 11:12:11,454 DEBUG cd myfrappe-bench && python3 -m venv env
+2023-05-16 11:12:12,753 DEBUG cd myfrappe-bench && /home/my_tag/myfrappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-05-16 11:12:14,869 DEBUG cd myfrappe-bench && /home/my_tag/myfrappe-bench/env/bin/python -m pip install --quiet wheel
+2023-05-16 11:12:27,833 LOG Getting frappe
+2023-05-16 11:12:27,833 DEBUG cd myfrappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2023-05-16 11:12:39,169 LOG Installing frappe
+2023-05-16 11:12:39,169 DEBUG cd /home/my_tag/myfrappe-bench && /home/my_tag/myfrappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/my_tag/myfrappe-bench/apps/frappe 
+2023-05-16 11:13:02,430 DEBUG cd /home/my_tag/myfrappe-bench/apps/frappe && yarn install
+2023-05-16 11:13:23,429 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-05-16 11:13:23,429 DEBUG cd myfrappe-bench && bench build
+2023-05-16 11:13:23,514 INFO /home/my_tag/tag-frappe/tar-env/bin/bench build
+2023-05-16 11:14:07,120 LOG setting up backups
+2023-05-16 11:14:07,130 LOG backups were set up
+2023-05-16 11:14:07,131 INFO Bench myfrappe-bench initialized
+2023-05-16 11:17:31,101 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --version
+2023-05-16 11:17:39,360 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:17:39,549 INFO /home/my_tag/tag-frappe/tar-env/bin/bench schedule
+2023-05-16 11:17:39,554 INFO /home/my_tag/tag-frappe/tar-env/bin/bench worker
+2023-05-16 11:17:39,583 INFO /home/my_tag/tag-frappe/tar-env/bin/bench serve --port 8000
+2023-05-16 11:17:39,589 INFO /home/my_tag/tag-frappe/tar-env/bin/bench watch
+2023-05-16 11:22:26,682 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:23:09,167 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:25:41,976 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:26:50,659 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:27:10,298 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:28:00,727 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:34:34,556 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:36:09,187 INFO /home/my_tag/tag-frappe/tar-env/bin/bench start
+2023-05-16 11:37:32,509 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 11:42:50,930 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 11:42:51,661 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 11:42:51,683 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 11:42:51,705 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 11:42:51,707 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 11:44:47,400 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 11:44:48,126 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 11:44:48,132 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 11:44:48,134 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 11:44:48,178 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 11:47:34,478 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 11:47:35,214 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 11:47:35,239 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 11:47:35,247 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 11:47:35,251 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 11:53:34,677 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 11:53:35,426 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 11:53:35,434 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 11:53:35,446 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 11:53:35,450 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 11:56:18,773 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 11:56:19,506 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 11:56:19,514 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 11:56:19,517 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 11:56:19,555 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 11:58:44,240 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 11:58:44,963 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 11:58:44,965 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 11:58:44,965 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 11:58:45,017 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 11:59:25,952 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 11:59:26,679 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 11:59:26,684 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 11:59:26,726 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 11:59:26,730 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 12:00:01,201 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup
+2023-05-16 12:25:03,304 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 12:26:47,406 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 12:28:06,698 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 15:07:23,365 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 15:08:33,577 INFO /home/my_tag/.local/bin/bench --version
+2023-05-16 15:08:34,195 INFO A newer version of bench is available: 5.8.0 → 5.16.2
+2023-05-16 15:08:41,046 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 15:09:52,676 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 15:13:24,104 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 15:13:24,827 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 15:13:24,827 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 15:13:24,842 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 15:13:24,858 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 15:15:58,105 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 15:15:58,827 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 15:15:58,829 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 15:15:58,840 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 15:15:58,854 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 15:52:51,891 INFO /home/my_tag/.local/bin/bench get-app --branch version-13 erpnext https://github.com/frappe/erpnext.git
+2023-05-16 15:52:52,414 LOG Getting erpnext
+2023-05-16 15:52:52,415 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2023-05-16 15:53:41,285 LOG Installing erpnext
+2023-05-16 15:53:41,286 DEBUG cd /home/my_tag/myfrappe-bench && /home/my_tag/myfrappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/my_tag/myfrappe-bench/apps/erpnext 
+2023-05-16 15:54:38,357 DEBUG cd /home/my_tag/myfrappe-bench/apps/erpnext && yarn install
+2023-05-16 15:54:39,739 DEBUG bench build --app erpnext
+2023-05-16 15:54:39,838 INFO /home/my_tag/.local/bin/bench build --app erpnext
+2023-05-16 15:57:47,165 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP.com
+2023-05-16 15:59:42,088 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP.com
+2023-05-16 16:02:10,248 INFO /home/my_tag/.local/bin/bench install-app erpnext
+2023-05-16 16:02:46,167 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-16 16:03:06,001 INFO /home/my_tag/.local/bin/bench install-app erpnex
+2023-05-16 16:03:37,872 INFO /home/my_tag/.local/bin/bench install-app erpnex --site MyTrialERP.com
+2023-05-16 16:04:14,268 INFO /home/my_tag/.local/bin/bench use myTrialERP.com
+2023-05-16 16:04:30,620 INFO /home/my_tag/.local/bin/bench use MyTrialERP.com
+2023-05-16 16:05:22,451 INFO /home/my_tag/.local/bin/bench install-app erpnext
+2023-05-16 16:06:59,796 INFO /home/my_tag/.local/bin/bench new-site myTrialERP.com
+2023-05-16 16:07:24,409 INFO /home/my_tag/.local/bin/bench new-site myTrialERP.com
+2023-05-16 16:08:00,809 INFO /home/my_tag/.local/bin/bench new-site myTrialERP.com
+2023-05-16 16:08:40,211 INFO /home/my_tag/.local/bin/bench new-site myTrialERP.com
+2023-05-16 16:22:32,903 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP1.com
+2023-05-16 16:30:49,980 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP2.com
+2023-05-16 16:36:06,386 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com mariadb
+2023-05-16 16:36:50,630 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com backup
+2023-05-16 16:37:39,282 INFO /home/my_tag/.local/bin/bench new-site MyTrialERPNext.com
+2023-05-16 16:38:31,215 INFO /home/my_tag/.local/bin/bench new-site MyTrialERPNext.com
+2023-05-16 16:39:25,615 INFO /home/my_tag/.local/bin/bench --site MyTrialERPNext.com backup
+2023-05-16 16:40:08,959 INFO /home/my_tag/.local/bin/bench use MyTrialERPNext.com
+2023-05-16 16:40:44,388 INFO /home/my_tag/.local/bin/bench --site MyTrialERPNext.com backup
+2023-05-16 16:41:44,035 INFO /home/my_tag/.local/bin/bench --site MyTrialERPNext.com backup
+2023-05-16 16:42:33,858 INFO /home/my_tag/.local/bin/bench --site MyTrialERPN.com backup
+2023-05-16 16:42:56,599 INFO /home/my_tag/.local/bin/bench new-site MyTrialERPN.com
+2023-05-16 16:43:14,406 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 16:43:15,166 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 16:43:15,174 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 16:43:15,216 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 16:43:15,220 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 16:44:01,732 INFO /home/my_tag/.local/bin/bench new-site MyTrialERPN.com
+2023-05-16 16:44:12,520 INFO /home/my_tag/.local/bin/bench --site MyTrialERPN.com backup
+2023-05-16 16:44:30,386 INFO /home/my_tag/.local/bin/bench use myTrialERPN.com
+2023-05-16 16:44:33,574 INFO /home/my_tag/.local/bin/bench --site MyTrialERPN.com backup
+2023-05-16 16:45:24,127 INFO /home/my_tag/.local/bin/bench --site MyTrialERPA.com backup
+2023-05-16 16:45:39,761 INFO /home/my_tag/.local/bin/bench new-site MyTrialERPA.com
+2023-05-16 16:51:16,207 INFO /home/my_tag/.local/bin/bench new-site MyTrialERPK.com
+2023-05-16 17:09:10,144 INFO /home/my_tag/.local/bin/bench use myTrialERP.com
+2023-05-16 17:09:32,204 INFO /home/my_tag/.local/bin/bench install-app erpnext
+2023-05-16 17:10:05,158 INFO /home/my_tag/.local/bin/bench use MyTrialERP.com
+2023-05-16 17:10:09,676 INFO /home/my_tag/.local/bin/bench install-app erpnext
+2023-05-16 17:10:35,135 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-16 17:10:54,783 INFO /home/my_tag/.local/bin/bench use MyTrialERP.com
+2023-05-16 17:11:03,996 INFO /home/my_tag/.local/bin/bench install-app erpnext
+2023-05-16 17:11:28,023 INFO /home/my_tag/.local/bin/bench new-site MyTrialERPK.com
+2023-05-16 17:11:52,403 INFO /home/my_tag/.local/bin/bench use MyTrialERPK.com
+2023-05-16 17:11:58,848 INFO /home/my_tag/.local/bin/bench install-app erpnext
+2023-05-16 17:49:05,900 INFO /home/my_tag/.local/bin/bench drop-site {site} --no-backup
+2023-05-16 17:49:29,848 INFO /home/my_tag/.local/bin/bench drop-site MyTrialERP.com --no-backup
+2023-05-16 17:49:59,652 INFO /home/my_tag/.local/bin/bench drop-site MyTrialERP.com --no-backup --force
+2023-05-16 17:53:32,540 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 17:53:42,677 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 17:55:49,841 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 17:56:27,017 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 17:56:27,880 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 17:56:27,883 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 17:56:27,924 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 17:56:27,930 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 17:59:33,574 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 17:59:34,432 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 17:59:34,438 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 17:59:34,449 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 17:59:34,452 INFO /home/my_tag/.local/bin/bench worker
+2023-05-16 18:00:02,059 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup
+2023-05-16 18:00:25,047 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP.com
+2023-05-16 18:57:34,868 INFO /home/my_tag/.local/bin/bench start
+2023-05-16 18:57:35,855 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-16 18:57:35,860 INFO /home/my_tag/.local/bin/bench watch
+2023-05-16 18:57:35,946 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-16 18:57:35,958 INFO /home/my_tag/.local/bin/bench worker
+2023-05-17 10:32:33,975 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com mariadb
+2023-05-17 10:48:29,849 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com mariadb
+2023-05-17 10:54:29,233 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com mariadb
+2023-05-17 10:54:53,192 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP.com
+2023-05-17 10:55:02,671 INFO /home/my_tag/.local/bin/bench use myTrialERP.com
+2023-05-17 10:55:12,056 INFO /home/my_tag/.local/bin/bench use MyTrialERP.com
+2023-05-17 10:55:41,879 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-17 11:32:54,302 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-17 11:39:38,388 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP.com
+2023-05-17 11:39:48,384 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-17 11:43:00,892 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-17 11:58:46,077 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-17 12:00:01,913 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup
+2023-05-17 12:01:32,101 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP1.com
+2023-05-17 12:01:51,674 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP1.com
+2023-05-17 12:02:12,252 INFO /home/my_tag/.local/bin/bench use MyTrialERP1.com
+2023-05-17 12:02:53,151 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-17 12:03:02,292 INFO /home/my_tag/.local/bin/bench --site MyTrialERP1.com install-app erpnext
+2023-05-17 12:59:33,082 INFO /home/my_tag/.local/bin/bench --site MyTrialERP1.com install-app erpnext
+2023-05-17 12:59:54,028 INFO /home/my_tag/.local/bin/bench --site MyTrialERP.com install-app erpnext
+2023-05-17 13:08:21,876 INFO /home/my_tag/.local/bin/bench new-site MyTrialERP2.com
+2023-05-17 13:41:08,464 INFO /home/my_tag/.local/bin/bench new-site erpnext.ap.com --db-name ERP --mariadb-root-username root --mariadb-root-password 123456 --install-app erpnext --verbose --force
+2023-05-17 13:50:06,973 INFO /home/my_tag/.local/bin/bench set-config -g developer_mode true
+2023-05-17 13:50:17,162 INFO /home/my_tag/.local/bin/bench start
+2023-05-17 13:52:31,830 INFO /home/my_tag/.local/bin/bench start
+2023-05-17 13:54:31,668 INFO /home/my_tag/.local/bin/bench start
+2023-05-17 13:54:32,510 INFO /home/my_tag/.local/bin/bench watch
+2023-05-17 13:54:32,516 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-17 13:54:32,521 INFO /home/my_tag/.local/bin/bench worker
+2023-05-17 13:54:32,544 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-17 13:54:54,421 INFO /home/my_tag/.local/bin/bench start
+2023-05-17 13:54:55,272 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-17 13:54:55,277 INFO /home/my_tag/.local/bin/bench watch
+2023-05-17 13:54:55,307 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-17 13:54:55,318 INFO /home/my_tag/.local/bin/bench worker
+2023-05-17 13:56:32,707 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com add-to-hosts
+2023-05-17 14:00:34,587 INFO /home/my_tag/.local/bin/bench clear-cache
+2023-05-17 14:02:03,505 INFO /home/my_tag/.local/bin/bench clear-cache
+2023-05-17 14:08:39,379 INFO /home/my_tag/.local/bin/bench start
+2023-05-17 14:10:18,986 INFO /home/my_tag/.local/bin/bench start
+2023-05-17 14:10:19,848 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-17 14:10:19,863 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-17 14:10:19,868 INFO /home/my_tag/.local/bin/bench watch
+2023-05-17 14:10:19,870 INFO /home/my_tag/.local/bin/bench worker
+2023-05-17 18:00:02,008 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup
+2023-05-18 12:00:02,101 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup
+2023-05-18 14:01:42,472 INFO /home/my_tag/.local/bin/bench new-app erp_next
+2023-05-18 14:01:43,011 LOG creating new app erp_next
+2023-05-18 14:14:14,940 LOG Installing erp_next
+2023-05-18 14:14:14,940 DEBUG cd /home/my_tag/myfrappe-bench && /home/my_tag/myfrappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/my_tag/myfrappe-bench/apps/erp_next 
+2023-05-18 14:14:16,536 DEBUG bench build --app erp_next
+2023-05-18 14:14:16,641 INFO /home/my_tag/.local/bin/bench build --app erp_next
+2023-05-18 14:21:14,655 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com install-app erp_next
+2023-05-18 14:22:07,577 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-18 14:25:01,924 INFO /home/my_tag/.local/bin/bench start
+2023-05-18 14:25:02,685 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-18 14:25:02,734 INFO /home/my_tag/.local/bin/bench watch
+2023-05-18 14:25:02,737 INFO /home/my_tag/.local/bin/bench worker
+2023-05-18 14:25:02,737 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-18 18:00:01,530 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup
+2023-05-19 12:00:01,963 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup
+2023-05-19 16:24:51,583 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 16:24:52,603 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-19 16:24:52,675 INFO /home/my_tag/.local/bin/bench watch
+2023-05-19 16:24:52,692 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-19 16:24:52,696 INFO /home/my_tag/.local/bin/bench worker
+2023-05-19 20:31:23,624 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:31:30,187 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:33:36,244 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:33:37,101 INFO /home/my_tag/.local/bin/bench watch
+2023-05-19 20:33:37,104 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-19 20:33:37,127 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-19 20:33:37,127 INFO /home/my_tag/.local/bin/bench worker
+2023-05-19 20:34:05,486 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:34:06,362 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-19 20:34:06,373 INFO /home/my_tag/.local/bin/bench watch
+2023-05-19 20:34:06,389 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-19 20:34:06,396 INFO /home/my_tag/.local/bin/bench worker
+2023-05-19 20:35:16,551 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:35:17,432 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-19 20:35:17,439 INFO /home/my_tag/.local/bin/bench watch
+2023-05-19 20:35:17,443 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-19 20:35:17,460 INFO /home/my_tag/.local/bin/bench worker
+2023-05-19 20:39:01,277 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:40:01,284 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:41:02,271 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:41:34,018 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:41:34,888 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-19 20:41:34,892 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-19 20:41:34,935 INFO /home/my_tag/.local/bin/bench watch
+2023-05-19 20:41:34,935 INFO /home/my_tag/.local/bin/bench worker
+2023-05-19 20:42:26,895 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:42:27,756 INFO /home/my_tag/.local/bin/bench watch
+2023-05-19 20:42:27,757 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-19 20:42:27,761 INFO /home/my_tag/.local/bin/bench worker
+2023-05-19 20:42:27,804 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-19 20:51:33,179 INFO /home/my_tag/.local/bin/bench start
+2023-05-19 20:51:33,976 INFO /home/my_tag/.local/bin/bench watch
+2023-05-19 20:51:33,982 INFO /home/my_tag/.local/bin/bench worker
+2023-05-19 20:51:33,995 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-19 20:51:33,995 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-21 10:36:36,624 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com uninstall-app erp_next
+2023-05-21 10:38:02,384 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com drop-app erp_next
+2023-05-21 10:38:02,914 WARNING /home/my_tag/.local/bin/bench --site erpnext.ap.com drop-app erp_next executed with exit code 2
+2023-05-21 10:38:16,079 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com remove-app erp_next
+2023-05-21 10:38:16,607 WARNING /home/my_tag/.local/bin/bench --site erpnext.ap.com remove-app erp_next executed with exit code 2
+2023-05-21 10:43:31,098 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 10:45:05,571 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com uninstall-app erp_next --force
+2023-05-21 10:45:30,642 INFO /home/my_tag/.local/bin/bench start
+2023-05-21 10:45:31,403 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-21 10:45:31,467 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-21 10:45:31,468 INFO /home/my_tag/.local/bin/bench watch
+2023-05-21 10:45:31,472 INFO /home/my_tag/.local/bin/bench worker
+2023-05-21 10:46:06,256 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com uninstall-app erp_next --force
+2023-05-21 10:46:43,699 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 10:47:31,173 INFO /home/my_tag/.local/bin/bench new-app apple
+2023-05-21 10:47:31,711 LOG creating new app apple
+2023-05-21 10:48:14,156 LOG Installing apple
+2023-05-21 10:48:14,157 DEBUG cd /home/my_tag/myfrappe-bench && /home/my_tag/myfrappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/my_tag/myfrappe-bench/apps/apple 
+2023-05-21 10:48:15,716 DEBUG bench build --app apple
+2023-05-21 10:48:15,817 INFO /home/my_tag/.local/bin/bench build --app apple
+2023-05-21 10:49:27,328 INFO /home/my_tag/.local/bin/bench --site library.test install-app library_management
+2023-05-21 10:49:59,423 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com install-app apple
+2023-05-21 10:50:05,888 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 10:50:32,872 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 10:52:12,979 INFO /home/my_tag/.local/bin/bench start
+2023-05-21 10:52:13,777 INFO /home/my_tag/.local/bin/bench serve --port 8000
+2023-05-21 10:52:13,782 INFO /home/my_tag/.local/bin/bench worker
+2023-05-21 10:52:13,783 INFO /home/my_tag/.local/bin/bench watch
+2023-05-21 10:52:13,817 INFO /home/my_tag/.local/bin/bench schedule
+2023-05-21 10:59:16,641 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 10:59:28,278 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com install-app apple
+2023-05-21 10:59:32,670 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 10:59:41,549 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com install-app apple
+2023-05-21 10:59:44,396 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 11:00:45,099 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 11:00:53,073 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com install-app apple
+2023-05-21 11:01:16,275 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com install-app apple
+2023-05-21 11:01:42,556 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 11:11:16,400 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com list-apps
+2023-05-21 11:11:35,815 INFO /home/my_tag/.local/bin/bench --site erpnext.ap.com uninstall-app erp_next --force
+2023-05-22 12:00:01,834 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup
+2023-05-22 18:00:01,872 INFO /home/my_tag/tag-frappe/tar-env/bin/bench --verbose --site all backup

@@ -1,0 +1,66 @@
+2023-05-19 13:22:10,574 ERROR frappe New Exception collected with id: 2023-05-19 13:22:10.486274-127.0.0.1-e21
+Site: erpnext.ap.com
+Form Dict: {'doc': '{"name":"SAL-QTN-2023-00001","owner":"Administrator","creation":"2023-05-18 14:49:51.821198","modified":"2023-05-18 14:49:51.821198","modified_by":"Administrator","idx":0,"docstatus":0,"workflow_state":"Draft","title":"CC","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Customer","party_name":"CC","customer_name":"CC","company":"Indictranstech","transaction_date":"2023-05-18","valid_till":"2023-06-18","order_type":"Sales","shipping_address_name":"","company_gstin":"","customer_group":"All Customer Groups","territory":"India","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":1,"base_total":0,"base_net_total":0,"total":0,"net_total":0,"total_net_weight":0,"tax_category":"","base_total_taxes_and_charges":0,"total_taxes_and_charges":0,"apply_discount_on":"Grand Total","base_discount_amount":0,"additional_discount_percentage":0,"discount_amount":0,"base_grand_total":0,"base_rounding_adjustment":0,"base_in_words":"INR Zero only.","base_rounded_total":0,"grand_total":0,"rounding_adjustment":0,"rounded_total":0,"in_words":"INR Zero only.","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","items":[{"name":"a3e28157a5","owner":"Administrator","creation":"2023-05-18 14:49:51.821198","modified":"2023-05-18 14:49:51.821198","modified_by":"Administrator","parent":"SAL-QTN-2023-00001","parentfield":"items","parenttype":"Quotation","idx":1,"docstatus":0,"item_code":"2345","item_name":"software","description":"software","is_nil_exempt":0,"is_non_gst":0,"item_group":"All Item Groups","image":"","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":0,"net_rate":0,"amount":0,"net_amount":0,"base_rate":0,"base_net_rate":0,"base_amount":0,"base_net_amount":0,"pricing_rules":"","stock_uom_rate":0,"is_free_item":0,"valuation_rate":0,"gross_profit":0,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - indic","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"}],"packed_items":[],"pricing_rules":[],"taxes":[],"payment_schedule":[{"name":"d8fc0aa2cd","creation":"2023-05-18 14:49:52.137482","modified":"2023-05-18 14:49:52.137482","modified_by":"Administrator","parent":"SAL-QTN-2023-00001","parentfield":"payment_schedule","parenttype":"Quotation","idx":1,"docstatus":0,"due_date":"2023-05-18","invoice_portion":100,"discount":0,"payment_amount":0,"outstanding":0,"paid_amount":0,"discounted_amount":0,"base_payment_amount":0,"doctype":"Payment Schedule"}],"lost_reasons":[],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2023-05-19T07:47:18.360Z"}', 'print_format': 'cc', 'no_letterhead': '0', 'letterhead': 'cc', 'settings': '{}', '_lang': 'en', 'cmd': 'frappe.www.printview.get_html_and_style'}
+2023-05-19 13:22:19,906 ERROR frappe New Exception collected with id: 2023-05-19 13:22:19.900657-127.0.0.1-96a
+Site: erpnext.ap.com
+Form Dict: {'doc': '{"name":"SAL-QTN-2023-00001","owner":"Administrator","creation":"2023-05-18 14:49:51.821198","modified":"2023-05-18 14:49:51.821198","modified_by":"Administrator","idx":0,"docstatus":0,"workflow_state":"Draft","title":"CC","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Customer","party_name":"CC","customer_name":"CC","company":"Indictranstech","transaction_date":"2023-05-18","valid_till":"2023-06-18","order_type":"Sales","shipping_address_name":"","company_gstin":"","customer_group":"All Customer Groups","territory":"India","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":1,"base_total":0,"base_net_total":0,"total":0,"net_total":0,"total_net_weight":0,"tax_category":"","base_total_taxes_and_charges":0,"total_taxes_and_charges":0,"apply_discount_on":"Grand Total","base_discount_amount":0,"additional_discount_percentage":0,"discount_amount":0,"base_grand_total":0,"base_rounding_adjustment":0,"base_in_words":"INR Zero only.","base_rounded_total":0,"grand_total":0,"rounding_adjustment":0,"rounded_total":0,"in_words":"INR Zero only.","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","items":[{"name":"a3e28157a5","owner":"Administrator","creation":"2023-05-18 14:49:51.821198","modified":"2023-05-18 14:49:51.821198","modified_by":"Administrator","parent":"SAL-QTN-2023-00001","parentfield":"items","parenttype":"Quotation","idx":1,"docstatus":0,"item_code":"2345","item_name":"software","description":"software","is_nil_exempt":0,"is_non_gst":0,"item_group":"All Item Groups","image":"","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":0,"net_rate":0,"amount":0,"net_amount":0,"base_rate":0,"base_net_rate":0,"base_amount":0,"base_net_amount":0,"pricing_rules":"","stock_uom_rate":0,"is_free_item":0,"valuation_rate":0,"gross_profit":0,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - indic","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"}],"packed_items":[],"pricing_rules":[],"taxes":[],"payment_schedule":[{"name":"d8fc0aa2cd","creation":"2023-05-18 14:49:52.137482","modified":"2023-05-18 14:49:52.137482","modified_by":"Administrator","parent":"SAL-QTN-2023-00001","parentfield":"payment_schedule","parenttype":"Quotation","idx":1,"docstatus":0,"due_date":"2023-05-18","invoice_portion":100,"discount":0,"payment_amount":0,"outstanding":0,"paid_amount":0,"discounted_amount":0,"base_payment_amount":0,"doctype":"Payment Schedule"}],"lost_reasons":[],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2023-05-19T07:47:18.360Z"}', 'print_format': 'cc', 'no_letterhead': '0', 'letterhead': 'cc', 'settings': '{}', '_lang': 'en', 'cmd': 'frappe.www.printview.get_html_and_style'}
+2023-05-19 14:43:03,792 ERROR frappe New Exception collected with id: 2023-05-19 14:43:03.781235-127.0.0.1-748
+Site: erpnext.ap.com
+Form Dict: {'doc': '{"name":"SAL-QTN-2023-00001","owner":"Administrator","creation":"2023-05-18 14:49:51.821198","modified":"2023-05-18 14:49:51.821198","modified_by":"Administrator","idx":0,"docstatus":0,"workflow_state":"Draft","title":"CC","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Customer","party_name":"CC","customer_name":"CC","company":"Indictranstech","transaction_date":"2023-05-18","valid_till":"2023-06-18","order_type":"Sales","shipping_address_name":"","company_gstin":"","customer_group":"All Customer Groups","territory":"India","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":1,"base_total":0,"base_net_total":0,"total":0,"net_total":0,"total_net_weight":0,"tax_category":"","base_total_taxes_and_charges":0,"total_taxes_and_charges":0,"apply_discount_on":"Grand Total","base_discount_amount":0,"additional_discount_percentage":0,"discount_amount":0,"base_grand_total":0,"base_rounding_adjustment":0,"base_in_words":"INR Zero only.","base_rounded_total":0,"grand_total":0,"rounding_adjustment":0,"rounded_total":0,"in_words":"INR Zero only.","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","items":[{"name":"a3e28157a5","owner":"Administrator","creation":"2023-05-18 14:49:51.821198","modified":"2023-05-18 14:49:51.821198","modified_by":"Administrator","parent":"SAL-QTN-2023-00001","parentfield":"items","parenttype":"Quotation","idx":1,"docstatus":0,"item_code":"2345","item_name":"software","description":"software","is_nil_exempt":0,"is_non_gst":0,"item_group":"All Item Groups","image":"","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":0,"net_rate":0,"amount":0,"net_amount":0,"base_rate":0,"base_net_rate":0,"base_amount":0,"base_net_amount":0,"pricing_rules":"","stock_uom_rate":0,"is_free_item":0,"valuation_rate":0,"gross_profit":0,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - indic","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"}],"packed_items":[],"pricing_rules":[],"taxes":[],"payment_schedule":[{"name":"d8fc0aa2cd","creation":"2023-05-18 14:49:52.137482","modified":"2023-05-18 14:49:52.137482","modified_by":"Administrator","parent":"SAL-QTN-2023-00001","parentfield":"payment_schedule","parenttype":"Quotation","idx":1,"docstatus":0,"due_date":"2023-05-18","invoice_portion":100,"discount":0,"payment_amount":0,"outstanding":0,"paid_amount":0,"discounted_amount":0,"base_payment_amount":0,"doctype":"Payment Schedule"}],"lost_reasons":[],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2023-05-19T09:09:00.214Z"}', 'print_format': 'cc', 'no_letterhead': '0', 'letterhead': 'cc', 'settings': '{}', '_lang': 'en', 'cmd': 'frappe.www.printview.get_html_and_style'}
+2023-05-21 11:08:34,497 ERROR frappe New Exception collected with id: 2023-05-21 11:08:34.421194-127.0.0.1-c73
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:08:47,663 ERROR frappe New Exception collected with id: 2023-05-21 11:08:47.644314-127.0.0.1-d56
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:08:58,069 ERROR frappe New Exception collected with id: 2023-05-21 11:08:58.039123-127.0.0.1-5f5
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:09:04,207 ERROR frappe New Exception collected with id: 2023-05-21 11:09:04.186514-127.0.0.1-3e8
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:09:16,573 ERROR frappe New Exception collected with id: 2023-05-21 11:09:16.563285-127.0.0.1-c4d
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:03,511 ERROR frappe New Exception collected with id: 2023-05-21 11:10:03.497998-127.0.0.1-9b5
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:08,913 ERROR frappe New Exception collected with id: 2023-05-21 11:10:08.896909-127.0.0.1-651
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:10,742 ERROR frappe New Exception collected with id: 2023-05-21 11:10:10.725684-127.0.0.1-99c
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:11,831 ERROR frappe New Exception collected with id: 2023-05-21 11:10:11.816342-127.0.0.1-240
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:12,895 ERROR frappe New Exception collected with id: 2023-05-21 11:10:12.876688-127.0.0.1-3b9
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:28,769 ERROR frappe New Exception collected with id: 2023-05-21 11:10:28.750258-127.0.0.1-18d
+Site: erpnext.ap.com
+Form Dict: {'ver': '1684646296.0'}
+2023-05-21 11:10:31,135 ERROR frappe New Exception collected with id: 2023-05-21 11:10:31.127288-127.0.0.1-0ce
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:40,004 ERROR frappe New Exception collected with id: 2023-05-21 11:10:39.995850-127.0.0.1-e9c
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:41,192 ERROR frappe New Exception collected with id: 2023-05-21 11:10:41.183139-127.0.0.1-b62
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:10:50,234 ERROR frappe New Exception collected with id: 2023-05-21 11:10:50.226702-127.0.0.1-18a
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:11:50,859 ERROR frappe New Exception collected with id: 2023-05-21 11:11:50.847528-127.0.0.1-ce4
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:13:33,082 ERROR frappe New Exception collected with id: 2023-05-21 11:13:33.073966-127.0.0.1-f61
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-21 11:13:47,678 ERROR frappe New Exception collected with id: 2023-05-21 11:13:47.669750-127.0.0.1-273
+Site: erpnext.ap.com
+Form Dict: {}
+2023-05-22 12:48:36,130 ERROR frappe New Exception collected with id: 2023-05-22 12:48:36.125910-127.0.0.1-009
+Site: erpnext.ap.com
+Form Dict: {'doc': '', 'print_format': 'Standard', 'no_letterhead': '0', 'letterhead': '', 'settings': '{}', 'cmd': 'frappe.www.printview.get_html_and_style'}

@@ -1,0 +1,1307 @@
+2023-05-21 10:47:32,211 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:53:14,235 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 10:53:14,238 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 10:53:14,242 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 10:53:14,719 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 10:53:14,809 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:53:15,088 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 10:53:15,137 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 10:53:15,384 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 10:53:15,450 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 10:53:15,992 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 10:53:16,073 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 10:53:16,543 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 10:53:16,601 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 10:53:16,864 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 10:53:16,917 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 10:53:17,033 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 10:53:17,098 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 10:53:17,218 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 10:53:17,272 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 10:53:17,537 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 10:53:17,589 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 10:53:17,834 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 10:53:17,888 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 10:53:18,075 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 10:53:18,125 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 10:53:18,272 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 10:54:14,890 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 10:54:14,895 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 10:54:14,899 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 10:54:15,152 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:55:15,233 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 10:55:15,239 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 10:55:15,243 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 10:55:15,417 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 10:55:15,430 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:55:15,673 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 10:56:15,502 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 10:56:15,507 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 10:56:15,511 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 10:56:15,673 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 10:56:15,717 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:56:15,837 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 10:56:15,889 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 10:56:16,073 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 10:56:16,136 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 10:56:16,294 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 10:56:16,347 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 10:56:16,538 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 10:56:16,587 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 10:56:16,701 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 10:56:16,751 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 10:56:16,865 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 10:56:16,918 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 10:56:17,116 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 10:56:17,188 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 10:56:17,411 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 10:56:17,461 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 10:56:17,644 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 10:56:17,710 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 10:56:17,859 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 10:57:15,806 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 10:57:15,811 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 10:57:15,815 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 10:57:15,985 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:58:16,061 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 10:58:16,063 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 10:58:16,064 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 10:58:16,211 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:59:16,295 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 10:59:16,296 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 10:59:16,298 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 10:59:16,431 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:00:16,522 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:00:16,526 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:00:16,529 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:00:16,716 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for erpnext.ap.com
+2023-05-21 11:00:16,896 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:00:17,166 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for erpnext.ap.com
+2023-05-21 11:00:17,228 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for erpnext.ap.com
+2023-05-21 11:00:17,566 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for erpnext.ap.com
+2023-05-21 11:00:17,620 INFO scheduler Scheduled Job Start: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for erpnext.ap.com
+2023-05-21 11:00:17,887 INFO scheduler Scheduled Job Complete: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for erpnext.ap.com
+2023-05-21 11:00:17,942 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.collect_project_status for erpnext.ap.com
+2023-05-21 11:00:18,191 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.collect_project_status for erpnext.ap.com
+2023-05-21 11:00:18,246 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.hourly_reminder for erpnext.ap.com
+2023-05-21 11:00:18,514 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.hourly_reminder for erpnext.ap.com
+2023-05-21 11:00:18,568 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for erpnext.ap.com
+2023-05-21 11:00:18,848 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for erpnext.ap.com
+2023-05-21 11:00:18,903 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for erpnext.ap.com
+2023-05-21 11:00:19,115 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for erpnext.ap.com
+2023-05-21 11:00:19,169 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for erpnext.ap.com
+2023-05-21 11:00:19,380 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for erpnext.ap.com
+2023-05-21 11:00:19,434 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:00:19,652 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:00:19,702 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:00:19,929 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:00:19,979 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:00:20,180 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:00:20,230 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:00:20,424 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:00:20,475 INFO scheduler Scheduled Job Start: erpnext.utilities.doctype.video.video.update_youtube_data for erpnext.ap.com
+2023-05-21 11:00:20,708 INFO scheduler Scheduled Job Complete: erpnext.utilities.doctype.video.video.update_youtube_data for erpnext.ap.com
+2023-05-21 11:00:20,762 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:00:20,965 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:00:21,019 INFO scheduler Scheduled Job Start: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for erpnext.ap.com
+2023-05-21 11:00:21,258 INFO scheduler Scheduled Job Complete: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for erpnext.ap.com
+2023-05-21 11:00:21,312 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync for erpnext.ap.com
+2023-05-21 11:00:21,644 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync for erpnext.ap.com
+2023-05-21 11:00:21,700 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_hourly_updates for erpnext.ap.com
+2023-05-21 11:00:21,940 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_hourly_updates for erpnext.ap.com
+2023-05-21 11:00:21,995 INFO scheduler Scheduled Job Start: frappe.deferred_insert.save_to_db for erpnext.ap.com
+2023-05-21 11:00:22,346 INFO scheduler Scheduled Job Complete: frappe.deferred_insert.save_to_db for erpnext.ap.com
+2023-05-21 11:00:22,406 INFO scheduler Scheduled Job Start: frappe.desk.page.backups.backups.delete_downloadable_backups for erpnext.ap.com
+2023-05-21 11:00:22,594 INFO scheduler Scheduled Job Complete: frappe.desk.page.backups.backups.delete_downloadable_backups for erpnext.ap.com
+2023-05-21 11:00:22,647 INFO scheduler Scheduled Job Start: frappe.utils.error.collect_error_snapshots for erpnext.ap.com
+2023-05-21 11:00:22,852 INFO scheduler Scheduled Job Complete: frappe.utils.error.collect_error_snapshots for erpnext.ap.com
+2023-05-21 11:00:22,919 INFO scheduler Scheduled Job Start: frappe.model.utils.user_settings.sync_user_settings for erpnext.ap.com
+2023-05-21 11:00:23,088 INFO scheduler Scheduled Job Complete: frappe.model.utils.user_settings.sync_user_settings for erpnext.ap.com
+2023-05-21 11:00:23,142 INFO scheduler Scheduled Job Start: frappe.model.utils.link_count.update_link_count for erpnext.ap.com
+2023-05-21 11:00:23,312 INFO scheduler Scheduled Job Complete: frappe.model.utils.link_count.update_link_count for erpnext.ap.com
+2023-05-21 11:00:23,364 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:00:23,479 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:00:23,531 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:00:23,645 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:00:23,695 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:00:23,948 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:00:23,998 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:00:24,224 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:00:24,273 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:00:24,449 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:00:24,499 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:00:24,638 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:00:24,688 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for erpnext.ap.com
+2023-05-21 11:00:24,909 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for erpnext.ap.com
+2023-05-21 11:00:24,963 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for erpnext.ap.com
+2023-05-21 11:00:25,223 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for erpnext.ap.com
+2023-05-21 11:00:25,281 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for erpnext.ap.com
+2023-05-21 11:00:25,515 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for erpnext.ap.com
+2023-05-21 11:00:25,570 INFO scheduler Scheduled Job Start: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for erpnext.ap.com
+2023-05-21 11:00:25,780 INFO scheduler Scheduled Job Complete: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for erpnext.ap.com
+2023-05-21 11:00:25,834 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.process_all for erpnext.ap.com
+2023-05-21 11:00:26,068 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.process_all for erpnext.ap.com
+2023-05-21 11:01:16,989 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:01:16,993 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:01:16,997 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:01:17,276 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:02:17,362 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:02:17,365 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:02:17,368 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:02:17,562 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:03:17,633 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:03:17,637 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:03:17,641 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:03:17,802 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:04:17,878 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:04:17,883 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:04:17,887 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:04:18,052 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:04:18,089 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:04:18,364 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:04:18,424 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:04:18,696 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:04:18,745 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:04:18,945 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:04:18,994 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:04:19,184 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:04:19,253 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:04:19,419 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:04:19,483 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:04:19,620 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:04:19,681 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:04:19,974 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:04:20,023 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:04:20,248 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:04:20,298 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:04:20,503 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:04:20,568 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:04:20,697 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:05:18,175 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:05:18,179 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:05:18,183 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:05:18,462 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:05:18,468 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:05:18,784 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:06:19,307 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:06:19,309 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:06:19,310 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:06:19,450 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:07:19,545 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:07:19,549 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:07:19,553 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:07:19,718 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:08:19,800 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:08:19,801 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:08:19,802 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:08:20,061 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:08:20,093 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:08:20,370 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:08:20,423 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:08:20,661 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:08:20,715 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:08:20,940 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:08:20,992 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:08:21,370 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:08:21,443 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:08:21,598 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:08:21,679 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:08:21,834 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:08:21,900 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:08:22,246 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:08:22,297 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:08:22,564 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:08:22,630 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:08:22,860 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:08:22,912 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:08:23,062 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:09:20,163 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:09:20,170 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:09:20,174 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:09:20,473 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:10:20,551 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:10:20,556 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:10:20,561 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:10:20,843 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:10:20,843 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:10:21,196 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:11:20,933 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:11:20,937 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:11:20,940 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:11:21,092 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:12:21,182 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:12:21,187 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:12:21,191 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:12:21,343 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:12:21,372 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:12:21,576 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:12:21,626 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:12:21,865 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:12:21,915 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:12:22,114 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:12:22,163 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:12:22,416 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:12:22,466 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:12:22,580 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:12:22,651 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:12:22,782 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:12:22,854 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:12:23,143 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:12:23,193 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:12:23,418 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:12:23,468 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:12:23,642 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:12:23,692 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:12:23,830 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:13:21,448 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:13:21,452 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:13:21,456 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:13:21,619 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:14:21,699 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:14:21,704 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:14:21,708 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:14:21,874 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:15:21,949 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:15:21,950 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:15:21,952 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:15:22,090 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:15:22,095 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:15:22,290 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:15:22,345 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for erpnext.ap.com
+2023-05-21 11:15:22,559 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for erpnext.ap.com
+2023-05-21 11:15:22,612 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for erpnext.ap.com
+2023-05-21 11:15:22,867 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for erpnext.ap.com
+2023-05-21 11:15:22,921 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for erpnext.ap.com
+2023-05-21 11:15:23,152 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for erpnext.ap.com
+2023-05-21 11:16:22,170 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:16:22,175 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:16:22,179 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:16:22,342 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:16:22,385 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:16:22,511 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:16:22,568 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:16:22,728 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:16:22,778 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:16:22,923 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:16:22,976 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:16:23,193 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:16:23,243 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:16:23,357 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:16:23,406 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:16:23,521 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:16:23,573 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:16:23,761 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:16:23,810 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:16:23,976 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:16:24,034 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:16:24,251 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:16:24,313 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:16:24,453 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:17:22,454 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:17:22,459 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:17:22,463 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:17:22,682 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:18:22,754 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:18:22,759 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:18:22,763 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:18:22,986 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:19:23,062 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:19:23,066 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:19:23,070 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:19:23,227 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:20:23,305 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:20:23,307 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:20:23,308 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:20:23,449 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:20:23,487 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:20:23,731 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:20:23,781 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:20:24,033 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:20:24,083 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:20:24,282 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:20:24,331 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:20:24,594 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:20:24,644 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:20:24,902 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:20:24,955 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:20:25,067 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:20:25,117 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:20:25,232 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:20:25,281 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:20:25,533 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:20:25,583 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:20:25,822 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:20:25,877 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:20:26,071 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:20:26,122 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:20:26,247 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:21:23,565 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:21:23,569 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:21:23,572 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:21:23,736 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:22:23,823 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:22:23,827 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:22:23,830 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:22:23,983 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:23:24,055 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:23:24,057 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:23:24,058 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:23:24,203 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:24:24,277 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:24:24,283 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:24:24,287 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:24:24,470 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:24:24,501 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:24:24,657 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnext.ap.com
+2023-05-21 11:24:24,712 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:24:24,864 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnext.ap.com
+2023-05-21 11:24:24,913 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:24:25,063 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnext.ap.com
+2023-05-21 11:24:25,119 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:24:25,323 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnext.ap.com
+2023-05-21 11:24:25,381 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:24:25,508 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnext.ap.com
+2023-05-21 11:24:25,558 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:24:25,672 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnext.ap.com
+2023-05-21 11:24:25,721 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:24:25,982 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnext.ap.com
+2023-05-21 11:24:26,033 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:24:26,196 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnext.ap.com
+2023-05-21 11:24:26,245 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:24:26,431 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnext.ap.com
+2023-05-21 11:24:26,489 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:24:26,657 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnext.ap.com
+2023-05-21 11:25:24,584 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:25:24,588 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:25:24,593 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:25:24,782 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:25:24,791 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:25:24,973 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for erpnext.ap.com
+2023-05-21 11:26:24,878 ERROR scheduler Exception in Enqueue Events for Site MyTrialERP.com
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 70, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 115, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "apps/frappe/frappe/database/database.py", line 684, in get_single_value
+    val = self.sql(
+  File "apps/frappe/frappe/database/database.py", line 161, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 85, in connect
+    self._conn = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 92, in get_connection
+    conn.select_db(self.user)
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 496, in select_db
+    self._read_ok_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "env/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_c296b757cb15d301'")
+
+2023-05-21 11:26:24,883 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:26:24,887 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:26:25,055 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:27:25,151 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:27:25,155 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:27:25,303 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 11:28:25,384 DEBUG scheduler Access denied for site MyTrialERP1.com
+2023-05-21 11:28:25,388 DEBUG scheduler Access denied for site MyTrialERP2.com
+2023-05-21 11:28:25,615 DEBUG scheduler Queued events for site erpnext.ap.com

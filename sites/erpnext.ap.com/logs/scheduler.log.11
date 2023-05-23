@@ -1,0 +1,5 @@
+2023-05-21 10:31:26,187 INFO scheduler Scheduled Job Complete: frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points for erpnext.ap.com
+2023-05-21 10:31:26,195 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_daily_updates for erpnext.ap.com
+2023-05-21 10:31:26,270 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_daily_updates for erpnext.ap.com
+2023-05-21 10:31:26,462 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_daily_updates for erpnext.ap.com
+2023-05-21 10:31:26,506 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_daily_updates for erpnext.ap.com

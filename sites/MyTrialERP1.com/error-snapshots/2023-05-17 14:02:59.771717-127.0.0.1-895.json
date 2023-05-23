@@ -1,0 +1,704 @@
+{
+ "etype": "OperationalError",
+ "evalue": "OperationalError(1045, \"Access denied for user '_04f7908592de3be4'@'localhost' (using password: YES)\")",
+ "exception": {
+  "args": [
+   40,
+   49,
+   48,
+   52,
+   53,
+   44,
+   32,
+   34,
+   65,
+   99,
+   99,
+   101,
+   115,
+   115,
+   32,
+   100,
+   101,
+   110,
+   105,
+   101,
+   100,
+   32,
+   102,
+   111,
+   114,
+   32,
+   117,
+   115,
+   101,
+   114,
+   32,
+   39,
+   95,
+   48,
+   52,
+   102,
+   55,
+   57,
+   48,
+   56,
+   53,
+   57,
+   50,
+   100,
+   101,
+   51,
+   98,
+   101,
+   52,
+   39,
+   64,
+   39,
+   108,
+   111,
+   99,
+   97,
+   108,
+   104,
+   111,
+   115,
+   116,
+   39,
+   32,
+   40,
+   117,
+   115,
+   105,
+   110,
+   103,
+   32,
+   112,
+   97,
+   115,
+   115,
+   119,
+   111,
+   114,
+   100,
+   58,
+   32,
+   89,
+   69,
+   83,
+   41,
+   34,
+   41
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   79,
+   112,
+   101,
+   114,
+   97,
+   116,
+   105,
+   111,
+   110,
+   97,
+   108,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://erpnext.ap.com:8000/' [GET]>)",
+   "dump": {
+    "global init_request": "<function init_request>",
+    "request": "<Request 'http://erpnext.ap.com:8000/' [GET]>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "53": "\t\trollback = True",
+    "54": "",
+    "55": "\t\tinit_request(request)",
+    "56": "",
+    "57": "\t\tfrappe.api.validate_auth()"
+   },
+   "lnum": 55
+  },
+  {
+   "call": "(request=<Request 'http://erpnext.ap.com:8000/' [GET]>)",
+   "dump": {
+    "frappe. auth": "<module 'frappe.auth' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py'>",
+    "frappe. local": "<werkzeug.local.Local object>",
+    "frappe.auth. HTTPRequest": "<class 'frappe.auth.HTTPRequest'>",
+    "frappe.local.http_request": "undefined",
+    "global frappe": "<module 'frappe' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/app.py",
+   "func": "init_request",
+   "lines": {
+    "139": "",
+    "140": "\tif request.method != \"OPTIONS\":",
+    "141": "\t\tfrappe.local.http_request = frappe.auth.HTTPRequest()",
+    "142": "",
+    "143": "\tfor before_request_task in frappe.get_hooks(\"before_request\"):"
+   },
+   "lnum": 141
+  },
+  {
+   "call": "(self=<frappe.auth.HTTPRequest object>)",
+   "dump": {
+    "self": "<frappe.auth.HTTPRequest object>",
+    "self. set_session": "<bound method HTTPRequest.set_session of <frappe.auth.HTTPRequest object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py",
+   "func": "__init__",
+   "lines": {
+    "34": "",
+    "35": "\t\t# login and start/resume user session",
+    "36": "\t\tself.set_session()",
+    "37": "",
+    "38": "\t\t# set request language"
+   },
+   "lnum": 36
+  },
+  {
+   "call": "(self=<frappe.auth.HTTPRequest object>)",
+   "dump": {
+    "frappe. local": "<werkzeug.local.Local object>",
+    "frappe.local.login_manager": "undefined",
+    "global LoginManager": "<class 'frappe.auth.LoginManager'>",
+    "global frappe": "<module 'frappe' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py",
+   "func": "set_session",
+   "lines": {
+    "68": "",
+    "69": "\tdef set_session(self):",
+    "70": "\t\tfrappe.local.login_manager = LoginManager()",
+    "71": "",
+    "72": "\tdef validate_csrf_token(self):"
+   },
+   "lnum": 70
+  },
+  {
+   "call": "(self=<frappe.auth.LoginManager object>)",
+   "dump": {
+    "resume": "undefined",
+    "self": "<frappe.auth.LoginManager object>",
+    "self. make_session": "<bound method LoginManager.make_session of <frappe.auth.LoginManager object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py",
+   "func": "__init__",
+   "lines": {
+    "124": "\t\t\ttry:",
+    "125": "\t\t\t\tself.resume = True",
+    "126": "\t\t\t\tself.make_session(resume=True)",
+    "127": "\t\t\t\tself.get_user_info()",
+    "128": "\t\t\t\tself.set_user_info(resume=True)"
+   },
+   "lnum": 126
+  },
+  {
+   "call": "(self=<frappe.auth.LoginManager object>, resume=True)",
+   "dump": {
+    "frappe. local": "<werkzeug.local.Local object>",
+    "frappe.local.session_obj": "undefined",
+    "full_name": "undefined",
+    "global Session": "<class 'frappe.sessions.Session'>",
+    "global frappe": "<module 'frappe' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py'>",
+    "resume": "True",
+    "self": "<frappe.auth.LoginManager object>",
+    "self. full_name": "None",
+    "self. user": "None",
+    "self. user_type": "None",
+    "user": "undefined",
+    "user_type": "undefined"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py",
+   "func": "make_session",
+   "lines": {
+    "210": "\tdef make_session(self, resume=False):",
+    "211": "\t\t# start session",
+    "212": "\t\tfrappe.local.session_obj = Session(",
+    "213": "\t\t\tuser=self.user, resume=resume, full_name=self.full_name, user_type=self.user_type",
+    "214": "\t\t)"
+   },
+   "lnum": 212
+  },
+  {
+   "call": "(self=<frappe.sessions.Session object>, user=None, resume=True, full_name=None, user_type=None)",
+   "dump": {
+    "self": "<frappe.sessions.Session object>",
+    "self. resume": "<bound method Session.resume of <frappe.sessions.Session object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/sessions.py",
+   "func": "__init__",
+   "lines": {
+    "213": "",
+    "214": "\t\tif resume:",
+    "215": "\t\t\tself.resume()",
+    "216": "",
+    "217": "\t\telse:"
+   },
+   "lnum": 215
+  },
+  {
+   "call": "(self=<frappe.sessions.Session object>)",
+   "dump": {
+    "self": "<frappe.sessions.Session object>",
+    "self. user": "'Guest'",
+    "validate_ip_address": "<function validate_ip_address>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/sessions.py",
+   "func": "resume",
+   "lines": {
+    "285": "\t\t\tself.data.update({\"data\": data, \"user\": data.user, \"sid\": self.sid})",
+    "286": "\t\t\tself.user = data.user",
+    "287": "\t\t\tvalidate_ip_address(self.user)",
+    "288": "\t\t\tself.device = data.device",
+    "289": "\t\telse:"
+   },
+   "lnum": 287
+  },
+  {
+   "call": "(user='Guest')",
+   "dump": {
+    "frappe. flags": "{'currently_saving': [], 'redirect_location': ''...: False, 'has_dataurl': False, 'new_site': False}",
+    "frappe. get_cached_doc": "<function get_cached_doc>",
+    "frappe. get_doc": "<function get_doc>",
+    "frappe.flags. in_test": "False",
+    "global frappe": "<module 'frappe' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py'>",
+    "user": "'Guest'"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py",
+   "func": "validate_ip_address",
+   "lines": {
+    "415": "\t\"\"\"check if IP Address is valid\"\"\"",
+    "416": "\tuser = (",
+    "417": "\t\tfrappe.get_cached_doc(\"User\", user) if not frappe.flags.in_test else frappe.get_doc(\"User\", user)",
+    "418": "\t)",
+    "419": "\tip_list = user.get_restricted_ip_list()"
+   },
+   "lnum": 417
+  },
+  {
+   "call": "(*args=('User', 'Guest'), **kwargs={})",
+   "dump": {
+    "args": "('User', 'Guest')",
+    "doc": "None",
+    "global get_doc": "<function get_doc>",
+    "kwargs": "{}"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py",
+   "func": "get_cached_doc",
+   "lines": {
+    "1023": "",
+    "1024": "\t# database",
+    "1025": "\tdoc = get_doc(*args, **kwargs)",
+    "1026": "",
+    "1027": "\t# Set in cache"
+   },
+   "lnum": 1025
+  },
+  {
+   "call": "(*args=('User', 'Guest'), **kwargs={})",
+   "dump": {
+    "args": "('User', 'Guest')",
+    "doc": "undefined",
+    "frappe": "<module 'frappe' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py'>",
+    "frappe. model": "<module 'frappe.model' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/model/__init__.py'>",
+    "frappe.model. document": "<module 'frappe.model.document' from '/home/my_t...appe-bench/apps/frappe/frappe/model/document.py'>",
+    "frappe.model.document. get_doc": "<function get_doc>",
+    "kwargs": "{}"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py",
+   "func": "get_doc",
+   "lines": {
+    "1077": "\timport frappe.model.document",
+    "1078": "",
+    "1079": "\tdoc = frappe.model.document.get_doc(*args, **kwargs)",
+    "1080": "",
+    "1081": "\t# Update if exists in cache"
+   },
+   "lnum": 1079
+  },
+  {
+   "call": "(*args=('User', 'Guest'), **kwargs={})",
+   "dump": {
+    "controller": "undefined",
+    "doctype": "'User'",
+    "global get_controller": "<function get_controller>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/model/document.py",
+   "func": "get_doc",
+   "lines": {
+    "75": "\t\t\traise ValueError('\"doctype\" is a required key')",
+    "76": "",
+    "77": "\tcontroller = get_controller(doctype)",
+    "78": "\tif controller:",
+    "79": "\t\treturn controller(*args, **kwargs)"
+   },
+   "lnum": 77
+  },
+  {
+   "call": "(doctype='User')",
+   "dump": {
+    "_get_controller": "<function get_controller.<locals>._get_controller>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/model/base_document.py",
+   "func": "get_controller",
+   "lines": {
+    "76": "",
+    "77": "\tif frappe.local.dev_server or frappe.flags.in_migrate:",
+    "78": "\t\treturn _get_controller()",
+    "79": "",
+    "80": "\tsite_controllers = frappe.controllers.setdefault(frappe.local.site, {})"
+   },
+   "lnum": 78
+  },
+  {
+   "call": "()",
+   "dump": {
+    "cache": "undefined",
+    "custom": "undefined",
+    "doctype": "'User'",
+    "frappe. db": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "frappe. flags": "{'currently_saving': [], 'redirect_location': ''...: False, 'has_dataurl': False, 'new_site': False}",
+    "frappe.db. get_value": "<bound method Database.get_value of <frappe.database.mariadb.database.MariaDBDatabase object>>",
+    "frappe.flags. in_migrate": "None",
+    "global frappe": "<module 'frappe' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py'>",
+    "module_name": "undefined"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/model/base_document.py",
+   "func": "_get_controller",
+   "lines": {
+    "41": "\t\tfrom frappe.utils.nestedset import NestedSet",
+    "42": "",
+    "43": "\t\tmodule_name, custom = frappe.db.get_value(",
+    "44": "\t\t\t\"DocType\", doctype, (\"module\", \"custom\"), cache=not frappe.flags.in_migrate",
+    "45": "\t\t) or [\"Core\", False]"
+   },
+   "lnum": 43
+  },
+  {
+   "call": "(self=<frappe.database.mariadb.database.MariaDBDatabase object>, doctype='DocType', filters='User', fieldname=('module', 'custom'), ignore=None, as_dict=False, debug=False, order_by=None, cache=True, for_update=False)",
+   "dump": {
+    "as_dict": "False",
+    "cache": "True",
+    "debug": "False",
+    "doctype": "'DocType'",
+    "fieldname": "('module', 'custom')",
+    "filters": "'User'",
+    "for_update": "False",
+    "ignore": "None",
+    "limit": "undefined",
+    "order_by": "None",
+    "ret": "undefined",
+    "self": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "self. get_values": "<bound method Database.get_values of <frappe.database.mariadb.database.MariaDBDatabase object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py",
+   "func": "get_value",
+   "lines": {
+    "470": "\t\t\"\"\"",
+    "471": "",
+    "472": "\t\tret = self.get_values(",
+    "473": "\t\t\tdoctype,",
+    "474": "\t\t\tfilters,"
+   },
+   "lnum": 472
+  },
+  {
+   "call": "(self=<frappe.database.mariadb.database.MariaDBDatabase object>, doctype='DocType', filters='User', fieldname=('module', 'custom'), ignore=None, as_dict=False, debug=False, order_by='modified desc', update=None, cache=True, for_update=False, limit=1)",
+   "dump": {
+    "as_dict": "False",
+    "debug": "False",
+    "doctype": "'DocType'",
+    "fields": "('module', 'custom')",
+    "filters": "'User'",
+    "for_update": "False",
+    "limit": "1",
+    "order_by": "'modified desc'",
+    "out": "None",
+    "self": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "self. _get_values_from_table": "<bound method Database._get_values_from_table of...atabase.mariadb.database.MariaDBDatabase object>>",
+    "update": "None"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py",
+   "func": "get_values",
+   "lines": {
+    "542": "\t\t\tif (filters is not None) and (filters != doctype or doctype == \"DocType\"):",
+    "543": "\t\t\t\ttry:",
+    "544": "\t\t\t\t\tout = self._get_values_from_table(",
+    "545": "\t\t\t\t\t\tfields,",
+    "546": "\t\t\t\t\t\tfilters,"
+   },
+   "lnum": 544
+  },
+  {
+   "call": "(self=<frappe.database.mariadb.database.MariaDBDatabase object>, fields=('module', 'custom'), filters='User', doctype='DocType', as_dict=False, debug=False, order_by='order by modified desc', update=None, for_update=False, limit='limit 1')",
+   "dump": {
+    "\"select {fields} from `tab{doctype}` {where} {conditions} {order_by} {limit} {for_update}\".format": "undefined",
+    "as_dict": "False",
+    "conditions": "'`name` = %(name)s'",
+    "debug": "False",
+    "doctype": "'DocType'",
+    "fields": "('module', 'custom')",
+    "fl": "'`module`, `custom`'",
+    "for_update": "False",
+    "limit": "'limit 1'",
+    "order_by": "'order by modified desc'",
+    "r": "undefined",
+    "self": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "self. sql": "<bound method Database.sql of <frappe.database.mariadb.database.MariaDBDatabase object>>",
+    "update": "None",
+    "values": "{'name': 'User'}",
+    "where": "undefined"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py",
+   "func": "_get_values_from_table",
+   "lines": {
+    "737": "\t\tlimit = (\"limit \" + str(limit)) if limit else \"\"",
+    "738": "",
+    "739": "\t\tr = self.sql(",
+    "740": "\t\t\t\"select {fields} from `tab{doctype}` {where} {conditions} {order_by} {limit} {for_update}\".format(",
+    "741": "\t\t\t\tfor_update=\"for update\" if for_update else \"\","
+   },
+   "lnum": 739
+  },
+  {
+   "call": "(self=<frappe.database.mariadb.database.MariaDBDatabase object>, query='select `module`, `custom` from `tabDocType` where `name` = %(name)s order by modified desc limit 1', values={'name': 'User'}, as_dict=False, as_list=0, formatted=0, debug=False, ignore_ddl=0, as_utf8=0, auto_commit=0, update=None, explain=False)",
+   "dump": {
+    "self": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "self. connect": "<bound method Database.connect of <frappe.database.mariadb.database.MariaDBDatabase object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py",
+   "func": "sql",
+   "lines": {
+    "159": "",
+    "160": "\t\tif not self._conn:",
+    "161": "\t\t\tself.connect()",
+    "162": "",
+    "163": "\t\t# in transaction validations"
+   },
+   "lnum": 161
+  },
+  {
+   "call": "(self=<frappe.database.mariadb.database.MariaDBDatabase object>)",
+   "dump": {
+    "self": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "self. _conn": "None",
+    "self. get_connection": "<bound method MariaDBDatabase.get_connection of ...atabase.mariadb.database.MariaDBDatabase object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py",
+   "func": "connect",
+   "lines": {
+    "83": "\t\t\"\"\"Connects to a database as set in `site_config.json`.\"\"\"",
+    "84": "\t\tself.cur_db_name = self.user",
+    "85": "\t\tself._conn = self.get_connection()",
+    "86": "\t\tself._cursor = self._conn.cursor()",
+    "87": "\t\tfrappe.local.rollback_observers = []"
+   },
+   "lnum": 85
+  },
+  {
+   "call": "(self=<frappe.database.mariadb.database.MariaDBDatabase object>)",
+   "dump": {
+    "charset": "undefined",
+    "conn": "undefined",
+    "conv": "undefined",
+    "frappe. conf": "{'background_workers': 1, 'developer_mode': True...sword': 'OAKkRzHoSMK5Tfge', 'db_type': 'mariadb'}",
+    "frappe.conf. local_infile": "None",
+    "global conversions": "{<class 'bool'>: <function escape_bool>, <class 'int'>: <function escape_int>, <class 'float'>: <function escape_float>, <class 'str'>: <function escape_str>, <class 'bytes'>: <function escape_bytes>, <class 'tuple'>: <function escape_sequence>, <class 'list'>: <function escape_sequence>, <class 'set'>: <function escape_sequence>, <class 'frozenset'>: <function escape_sequence>, <class 'dict'>: <function escape_dict>, ...}",
+    "global frappe": "<module 'frappe' from '/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py'>",
+    "global pymysql": "<module 'pymysql' from '/home/my_tag/myfrappe-be...lib/python3.8/site-packages/pymysql/__init__.py'>",
+    "host": "undefined",
+    "local_infile": "undefined",
+    "password": "undefined",
+    "port": "undefined",
+    "pymysql. connect": "<class 'pymysql.connections.Connection'>",
+    "self": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "self. host": "'127.0.0.1'",
+    "self. password": "'OAKkRzHoSMK5Tfge'",
+    "self. port": "''",
+    "self. user": "'_04f7908592de3be4'",
+    "ssl": "undefined",
+    "ssl_params": "undefined",
+    "use_unicode": "undefined",
+    "user": "undefined",
+    "usessl": "0"
+   },
+   "file": "/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/mariadb/database.py",
+   "func": "get_connection",
+   "lines": {
+    "74": "\t\t)",
+    "75": "",
+    "76": "\t\tconn = pymysql.connect(",
+    "77": "\t\t\tuser=self.user or \"\",",
+    "78": "\t\t\tpassword=self.password or \"\","
+   },
+   "lnum": 76
+  },
+  {
+   "call": "(self=<pymysql.connections.Connection object>, user='_04f7908592de3be4', password='OAKkRzHoSMK5Tfge', host='127.0.0.1', database=None, unix_socket=None, port='', charset='utf8mb4', sql_mode=None, read_default_file=None, conv={<class 'bool'>: <function escape_bool>, <class 'int'>: <function escape_int>, <class 'float'>: <function escape_float>, <class 'str'>: <function escape_str>, <class 'bytes'>: <function escape_bytes>, <class 'tuple'>: <function escape_sequence>, <class 'list'>: <function escape_sequence>, <class 'set'>: <function escape_sequence>, <class 'frozenset'>: <function escape_sequence>, <class 'dict'>: <function escape_dict>, ...}, use_unicode=True, client_flag=3842565, cursorclass=<class 'pymysql.cursors.Cursor'>, init_command=None, connect_timeout=10, read_default_group=None, autocommit=False, local_infile=None, max_allowed_packet=16777216, defer_connect=False, auth_plugin_map=None, read_timeout=None, write_timeout=None, bind_address=None, binary_prefix=False, program_name=None, server_public_key=None, ssl=None, ssl_ca=None, ssl_cert=None, ssl_disabled=None, ssl_key=None, ssl_verify_cert=None, ssl_verify_identity=None, compress=None, named_pipe=None, passwd=None, db=None)",
+   "dump": {
+    "self": "<pymysql.connections.Connection object>",
+    "self. connect": "<bound method Connection.connect of <pymysql.connections.Connection object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py",
+   "func": "__init__",
+   "lines": {
+    "351": "            self._sock = None",
+    "352": "        else:",
+    "353": "            self.connect()",
+    "354": "",
+    "355": "    def __enter__(self):"
+   },
+   "lnum": 353
+  },
+  {
+   "call": "(self=<pymysql.connections.Connection object>, sock=<socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6>)",
+   "dump": {
+    "self": "<pymysql.connections.Connection object>",
+    "self. _request_authentication": "<bound method Connection._request_authentication of <pymysql.connections.Connection object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py",
+   "func": "connect",
+   "lines": {
+    "631": "",
+    "632": "            self._get_server_information()",
+    "633": "            self._request_authentication()",
+    "634": "",
+    "635": "            if self.sql_mode is not None:"
+   },
+   "lnum": 633
+  },
+  {
+   "call": "(self=<pymysql.connections.Connection object>)",
+   "dump": {
+    "auth_packet": "undefined",
+    "self": "<pymysql.connections.Connection object>",
+    "self. _read_packet": "<bound method Connection._read_packet of <pymysql.connections.Connection object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py",
+   "func": "_request_authentication",
+   "lines": {
+    "905": "",
+    "906": "        self.write_packet(data)",
+    "907": "        auth_packet = self._read_packet()",
+    "908": "",
+    "909": "        # if authentication method isn't accepted the first byte"
+   },
+   "lnum": 907
+  },
+  {
+   "call": "(self=<pymysql.connections.Connection object>, packet_type=<class 'pymysql.protocol.MysqlPacket'>)",
+   "dump": {
+    "packet": "<pymysql.protocol.MysqlPacket object>",
+    "packet. raise_for_error": "<bound method MysqlPacket.raise_for_error of <pymysql.protocol.MysqlPacket object>>"
+   },
+   "file": "/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py",
+   "func": "_read_packet",
+   "lines": {
+    "723": "            if self._result is not None and self._result.unbuffered_active is True:",
+    "724": "                self._result.unbuffered_active = False",
+    "725": "            packet.raise_for_error()",
+    "726": "        return packet",
+    "727": ""
+   },
+   "lnum": 725
+  },
+  {
+   "call": "(self=<pymysql.protocol.MysqlPacket object>)",
+   "dump": {
+    "err. raise_mysql_exception": "<function raise_mysql_exception>",
+    "global err": "<module 'pymysql.err' from '/home/my_tag/myfrapp.../env/lib/python3.8/site-packages/pymysql/err.py'>",
+    "self": "<pymysql.protocol.MysqlPacket object>",
+    "self. _data": "b\"\\xff\\x15\\x04#28000Access denied for user '_04f7908592de3be4'@'localhost' (using password: YES)\""
+   },
+   "file": "/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/protocol.py",
+   "func": "raise_for_error",
+   "lines": {
+    "219": "        if DEBUG:",
+    "220": "            print(\"errno =\", errno)",
+    "221": "        err.raise_mysql_exception(self._data)",
+    "222": "",
+    "223": "    def dump(self):"
+   },
+   "lnum": 221
+  },
+  {
+   "call": "(data=b\"\\xff\\x15\\x04#28000Access denied for user '_04f7908592de3be4'@'localhost' (using password: YES)\")",
+   "dump": {
+    "errno": "1045",
+    "errorclass": "<class 'pymysql.err.OperationalError'>",
+    "errval": "\"Access denied for user '_04f7908592de3be4'@'localhost' (using password: YES)\""
+   },
+   "file": "/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/err.py",
+   "func": "raise_mysql_exception",
+   "lines": {
+    "139": "    errval = data[9:].decode(\"utf-8\", \"replace\")",
+    "140": "    errorclass = error_map.get(errno)",
+    "141": "    if errorclass is None:",
+    "142": "        errorclass = InternalError if errno < 1000 else OperationalError",
+    "143": "    raise errorclass(errno, errval)"
+   },
+   "lnum": 143
+  }
+ ],
+ "locals": {
+  "data": "b\"\\xff\\x15\\x04#28000Access denied for user '_04f7908592de3be4'@'localhost' (using password: YES)\"",
+  "errno": "1045",
+  "errorclass": "<class 'pymysql.err.OperationalError'>",
+  "errval": "Access denied for user '_04f7908592de3be4'@'localhost' (using password: YES)"
+ },
+ "pyver": "Python 3.8.10: /home/my_tag/myfrappe-bench/env/bin/python (prefix: /home/my_tag/myfrappe-bench/env)",
+ "timestamp": "2023-05-17 14:02:59.771820",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/app.py\", line 55, in application\n    init_request(request)\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/app.py\", line 141, in init_request\n    frappe.local.http_request = frappe.auth.HTTPRequest()\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py\", line 36, in __init__\n    self.set_session()\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py\", line 70, in set_session\n    frappe.local.login_manager = LoginManager()\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py\", line 126, in __init__\n    self.make_session(resume=True)\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py\", line 212, in make_session\n    frappe.local.session_obj = Session(\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/sessions.py\", line 215, in __init__\n    self.resume()\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/sessions.py\", line 287, in resume\n    validate_ip_address(self.user)\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/auth.py\", line 417, in validate_ip_address\n    frappe.get_cached_doc(\"User\", user) if not frappe.flags.in_test else frappe.get_doc(\"User\", user)\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py\", line 1025, in get_cached_doc\n    doc = get_doc(*args, **kwargs)\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/__init__.py\", line 1079, in get_doc\n    doc = frappe.model.document.get_doc(*args, **kwargs)\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/model/document.py\", line 77, in get_doc\n    controller = get_controller(doctype)\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/model/base_document.py\", line 78, in get_controller\n    return _get_controller()\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/model/base_document.py\", line 43, in _get_controller\n    module_name, custom = frappe.db.get_value(\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py\", line 472, in get_value\n    ret = self.get_values(\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py\", line 544, in get_values\n    out = self._get_values_from_table(\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py\", line 739, in _get_values_from_table\n    r = self.sql(\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py\", line 161, in sql\n    self.connect()\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/database.py\", line 85, in connect\n    self._conn = self.get_connection()\n  File \"/home/my_tag/myfrappe-bench/apps/frappe/frappe/database/mariadb/database.py\", line 76, in get_connection\n    conn = pymysql.connect(\n  File \"/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py\", line 353, in __init__\n    self.connect()\n  File \"/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py\", line 633, in connect\n    self._request_authentication()\n  File \"/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py\", line 907, in _request_authentication\n    auth_packet = self._read_packet()\n  File \"/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py\", line 725, in _read_packet\n    packet.raise_for_error()\n  File \"/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/protocol.py\", line 221, in raise_for_error\n    err.raise_mysql_exception(self._data)\n  File \"/home/my_tag/myfrappe-bench/env/lib/python3.8/site-packages/pymysql/err.py\", line 143, in raise_mysql_exception\n    raise errorclass(errno, errval)\npymysql.err.OperationalError: (1045, \"Access denied for user '_04f7908592de3be4'@'localhost' (using password: YES)\")\n"
+}

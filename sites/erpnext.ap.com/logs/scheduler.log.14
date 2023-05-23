@@ -1,0 +1,564 @@
+2023-05-20 10:02:18,670 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:03:18,923 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:04:19,235 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:05:19,562 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:06:19,823 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:07:20,099 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:08:20,504 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:09:20,814 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:10:21,116 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:11:21,431 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:12:21,822 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:13:22,068 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:14:22,346 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:15:22,669 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:16:23,042 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:17:23,380 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:18:23,735 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:19:23,970 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:20:24,386 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:21:24,653 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:22:24,913 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:23:25,159 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:24:25,513 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:25:25,837 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:26:26,114 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:27:26,378 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:28:26,745 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:29:27,016 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:30:27,305 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:31:27,599 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:32:27,941 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:33:28,214 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:34:28,509 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:35:28,804 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:36:29,161 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:37:29,448 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:38:29,759 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:39:30,107 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:40:30,494 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:41:30,758 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:42:31,030 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:43:31,274 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:44:31,652 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:45:31,981 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:46:32,272 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:47:32,538 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:48:32,923 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:49:33,171 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:50:33,494 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:51:33,750 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:52:34,090 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:53:34,359 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:54:34,626 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:55:34,895 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:56:35,298 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:57:35,592 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:58:35,891 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-20 10:59:36,115 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:31:20,018 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:32:20,297 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:33:20,540 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:34:20,787 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:35:21,066 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:36:21,344 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:37:21,655 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:38:21,885 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:39:22,148 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:40:22,414 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:41:22,691 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:42:22,950 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:43:23,183 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:44:23,402 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:45:23,656 ERROR scheduler Exception in Enqueue Events for Site erpnext.ap.com
+Traceback (most recent call last):
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 91, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 236, in get_jobs
+    jobs = q.jobs + get_running_jobs_in_queue(q)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 209, in jobs
+    return self.get_jobs()
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 198, in get_jobs
+    job_ids = self.get_job_ids(offset, length)
+  File "env/lib/python3.8/site-packages/rq/queue.py", line 194, in get_job_ids
+    self.connection.lrange(self.key, start, end)]
+  File "env/lib/python3.8/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+2023-05-21 10:46:24,838 DEBUG scheduler Queued events for site erpnext.ap.com
+2023-05-21 10:47:25,079 DEBUG scheduler Queued events for site erpnext.ap.com
